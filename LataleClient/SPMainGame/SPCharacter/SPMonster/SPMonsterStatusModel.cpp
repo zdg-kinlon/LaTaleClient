@@ -282,7 +282,7 @@ void SPMonsterStatusModel::Render(float fTime)
 			int iRgnCount	=	(int)m_vTalkBallonTextDestRgn.size();
 
 			pkFont->SetShadow(false);
-			for( i = 0 ; i < iStrCount ; i++ )
+			for( int i = 0 ; i < iStrCount ; i++ )
 			{
 				pkFont->SetColor( m_colorTalkBalloonText );
 
@@ -377,7 +377,7 @@ void SPMonsterStatusModel::SetObjectRgn(RECT& rcRgn, int iCenterPosX, int iCente
 		rcTalkBallonTextDestRgn.top		= m_rcTalkBallonImageDestRgn[ TALKBALLON_MIDDLE ].bottom;
 		rcTalkBallonTextDestRgn.bottom	= m_rcTalkBallonImageDestRgn[ TALKBALLON_MIDDLE ].bottom + iTalkFontHeight;
 
-		for( i = 0 ; i < iStrCount ; i++ )
+		for( int i = 0 ; i < iStrCount ; i++ )
 		{
 			rcTalkBallonTextDestRgn.top		-= iTalkFontHeight;
 			rcTalkBallonTextDestRgn.bottom	-= iTalkFontHeight;

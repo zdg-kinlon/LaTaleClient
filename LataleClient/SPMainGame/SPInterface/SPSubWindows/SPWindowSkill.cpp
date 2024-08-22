@@ -734,7 +734,7 @@ int SPWindowSkill::OnMainMenuLButtonUp( unsigned int iID, WPARAM wParam , LPARAM
 		}
 	}
 
-	for( i = 0 ; i < SKILL_SUB_MENU_MAX ; ++i )
+	for( int i = 0 ; i < SKILL_SUB_MENU_MAX ; ++i )
 	{
 		if( m_pSubMenuButton[ i ] == NULL )
 			continue;
@@ -1862,7 +1862,8 @@ void SPWindowSkill::UpdateMainMenu( int iClassType )
 
 	UI_MAIN_MENU*	pUIMainMenu	=	NULL;
 
-	for( int i = 0 ; i < iMainMenuCount ; ++i )
+	int i;
+	for( i = 0 ; i < iMainMenuCount ; ++i )
 	{
 		pUIMainMenu	=	GetMainMenu( iClassType , i );
 
@@ -2089,7 +2090,7 @@ void SPWindowSkill::UpdateContentList( int iCurSubMenu , int iCurContentPage )
 			pActionInterface	=	pSkillManager->GetNextActionInterface();
 		}
 
-		for( i = 0 ; i < iGridCount ; ++i )
+		for( int i = 0 ; i < iGridCount ; ++i )
 		{
 			if( pActionInterface == NULL )
 				break;
@@ -2172,7 +2173,7 @@ void SPWindowSkill::UpdateContentList( int iCurSubMenu , int iCurContentPage )
 			pSkillActivity	=	pSkillArchive->GetNextSkillActivity( eType );
 		}
 
-		for( i = 0 ; i < iGridCount ; ++i )
+		for( int i = 0 ; i < iGridCount ; ++i )
 		{
 			if( pSkillActivity == NULL )
 				break;
@@ -2701,7 +2702,7 @@ void SPWindowSkill::HideContentWindow( int iPos )
 			stUIContentWindow.m_pContent[ i ]->Hide();
 	}
 
-	for( i = 0 ; i < SCGV_COUNT ; ++i )
+	for( int i = 0 ; i < SCGV_COUNT ; ++i )
 	{
 		if( stUIContentWindow.m_pImages[ i ] != NULL )
 			stUIContentWindow.m_pImages[ i ]->Hide();

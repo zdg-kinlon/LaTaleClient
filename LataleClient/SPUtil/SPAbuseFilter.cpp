@@ -42,7 +42,7 @@ SPAbuseFilter::~SPAbuseFilter()
 	}
 	m_vpAbuseWordList.clear();
 
-	for( cnt = 0; cnt < m_vpszBanWordList.size(); cnt++ ) {
+	for( unsigned cnt = 0; cnt < m_vpszBanWordList.size(); cnt++ ) {
 		delete [] (m_vpszBanWordList[cnt]);
 	}
 	m_vpszBanWordList.clear();

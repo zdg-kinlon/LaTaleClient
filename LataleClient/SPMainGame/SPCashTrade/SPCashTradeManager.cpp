@@ -382,7 +382,7 @@ bool SPCashTradeManager::IsEnableInventory()
 			}
 		}
 
-		for(i = 0; i < FIGURE_EQUIP; i++) {
+		for(int i = 0; i < FIGURE_EQUIP; i++) {
 			if(iRequireSlot[i] == 0) 
 				continue;
 

@@ -713,7 +713,7 @@ bool SPItemCluster::LoadLDTItem(const char* szFileName, bool bLoadPvp /*= false*
 
 		//	AJJIYA [7/21/2006]
 		//	효과 ID 추가
-		for ( i = 0 ; i < MAX_ITEM_EFFECT ; ++i )
+		for ( int i = 0 ; i < MAX_ITEM_EFFECT ; ++i )
 		{
 			//sprintf( szBuf , "_EffectID%d"		, i + 1 );
 			pLDTItem->GetField( iItemID , 67 + i , LDTField );
@@ -761,7 +761,7 @@ bool SPItemCluster::LoadLDTItem(const char* szFileName, bool bLoadPvp /*= false*
 		pLDTItem->GetField( iItemID, 83,			LDTField);		//"_Pet_ClassID"
 		pItemAttr->m_iPetClassID		= LDTField.uData.lValue;
 
-		for( i = 0; i < MAX_ITEM_SKILL; i++ )
+		for( int i = 0; i < MAX_ITEM_SKILL; i++ )
 		{
 			//sprintf(szBuf , "_Skill%d", i + 1 );
 			pLDTItem->GetField(iItemID, 84 + (i * 3), LDTField);

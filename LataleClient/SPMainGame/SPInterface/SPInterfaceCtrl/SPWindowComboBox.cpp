@@ -77,7 +77,7 @@ void SPWindowComboBox::Init()
 		m_vListBoxBGTexture.push_back( stTexture );
 	}
 
-	for( i = 0 ; i < COMBOBOX_DATA_TEXTURE_COUNT ; ++i )
+	for( int i = 0 ; i < COMBOBOX_DATA_TEXTURE_COUNT ; ++i )
 	{
 		m_vEditBoxBGTexture[ i ].reserve( COMBOBOX_TEXTURE_COUNT );
 

@@ -1373,7 +1373,7 @@ void SPWindowPet::UpdateSkillUI()
 
 	if (!pPet->IsNewGenerationPet())
 	{
-		for( i = 0 ; i < MAX_ITEM_SKILL ; ++i )
+		for( int i = 0 ; i < MAX_ITEM_SKILL ; ++i )
 		{
 			if( pPetItemAttr->m_iSkillID[ i ] == 0 )
 				continue;

@@ -1593,6 +1593,7 @@ void SPWindowFriend::UpdateWhiteList( int iPage )
 
 	FRIEND_INFO*	pFriendInfo;
 
+	int i;
 	for( i = 0 ; i < WIID_FRIEND_WHITE_LIST_MAX_USER ; i++ )
 	{
 		if( bOnLine == TRUE )
@@ -1711,7 +1712,8 @@ void SPWindowFriend::UpdateBlackList( int iPage )
 
 	STD_MAP_FRIEND::iterator	mIter	=	m_mpBlackList.begin();
 
-	for( int i = 0 ; i < iStartNum ; i++ )
+	int i;
+	for( i = 0 ; i < iStartNum ; i++ )
 	{
 		if( mIter == m_mpBlackList.end() )	
 			break;

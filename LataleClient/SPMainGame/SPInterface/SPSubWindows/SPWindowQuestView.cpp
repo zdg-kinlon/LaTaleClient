@@ -1372,7 +1372,7 @@ void SPWindowQuestView::UpdateReward()
 		pWindow->Hide();
 	}
 
-	for( i = 0 ; i < QUESTREWARD_MAX_ITEM ; ++i )
+	for( int i = 0 ; i < QUESTREWARD_MAX_ITEM ; ++i )
 	{
 		pUIItemUnit	=	(SPUIItemUnit*)( m_UIUnitManager.GetUnit( i ) );
 

@@ -63,7 +63,7 @@
 #include "SPWindowFriendSnatch.h"//[liuyang,2008.10.10]
 #include "SPWindowBugleMenu.h"
 #include "SPWindowVisualBugle.h"
-#include "SPWindowLoveMsgView.h"
+#include "SPInterface/SPLove/SPWindowLoveMsgView.h"
 
 #include "SPLocalizeManager.h"
 

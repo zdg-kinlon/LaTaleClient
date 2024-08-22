@@ -323,7 +323,7 @@ void SPWindowMenuBar::Init()
 	//	마우스 오버 백그라운드 위치 보정
 	//
 
-	for( i = 0 ; i < MENU_BUTTON_MAX ; ++i )
+	for( int i = 0 ; i < MENU_BUTTON_MAX ; ++i )
 	{
 		pWindow			=	Find( WIID_MENUBAR_BUTTON + i );
 		pWindowSelect	=	Find( WIID_MENUBAR_SELECT + i );
@@ -347,7 +347,7 @@ void SPWindowMenuBar::Init()
 	//	라인 위치 보정
 	//
 
-	for( i = 0 ; i < LINE_COUNT ; ++i )
+	for( int i = 0 ; i < LINE_COUNT ; ++i )
 	{
 		pWindow			=	Find( WIID_MENUBAR_LINE1 + i );
 

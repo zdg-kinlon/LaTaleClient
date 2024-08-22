@@ -134,7 +134,7 @@
 #include "SPGuildArchive.h"
 #include "SPWindowMiniTeam.h"
 
-#include "SPLoveManager.h"
+#include "SPLove/SPLoveManager.h"
 
 #include "SPBeAttackedList.h"
 
@@ -149,7 +149,7 @@
 #include "SPPetLevelMgr.h"
 #include "SPWindowPetChat.h"
 
-#include "AutoInterface.h"
+#include "AutoPlay/AutoInterface.h"
 
 
 const float ACCUMULAT_REAR_EFFECT_TICK = 0.1f;

@@ -2044,6 +2044,7 @@ void SPWindowFriendFollow::UpdateWhiteList( int iPage )
 
 	FRIEND_INFO*	pFriendInfo;
 
+	int i;
 	for( i = 0 ; i < WIID_FRIEND_FOLLOW_WHITE_LIST_MAX_USER ; i++ )
 	{
 		if( bOnLine == TRUE )
@@ -2179,7 +2180,8 @@ void SPWindowFriendFollow::UpdateRecentList( int iPage )
 
 	std::deque<RFWName>::iterator mIter	=	m_DeqRecentName.begin();
 
-	for( int i = 0 ; i < iStartNum ; i++ )
+	int i;
+	for( i = 0 ; i < iStartNum ; i++ )
 	{
 		if( mIter == m_DeqRecentName.end() )	
 			break;
@@ -2303,7 +2305,8 @@ void SPWindowFriendFollow::UpdateBlackList( int iPage )
 
 	STD_MAP_FRIEND_FOLLOW::iterator	mIter	=	m_mpBlackList.begin();
 
-	for( int i = 0 ; i < iStartNum ; i++ )
+	int i;
+	for( i = 0 ; i < iStartNum ; i++ )
 	{
 		if( mIter == m_mpBlackList.end() )	
 			break;

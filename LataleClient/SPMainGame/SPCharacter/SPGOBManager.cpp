@@ -35,7 +35,7 @@
 
 #include "SPLootingBag.h"
 
-#include "SPMessageBoard.h"
+#include "SPCharacter/SPMessageBoard/SPMessageBoard.h"
 
 #include "SPResourceDef.h"
 #include "SPGOBClusterDEF.h"

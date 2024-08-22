@@ -435,7 +435,7 @@ void SPWindowWorldMapToolTip::CalEndPos()
 		}
 	}
 
-	for( i = WIID_WORLDMAPTOOLTIP_CAL_END ; i > WIID_WORLDMAPTOOLTIP_CAL_START ; --i )
+	for( int i = WIID_WORLDMAPTOOLTIP_CAL_END ; i > WIID_WORLDMAPTOOLTIP_CAL_START ; --i )
 	{
 		pWindow	=	Find( i , true );
 

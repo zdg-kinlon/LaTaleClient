@@ -39,7 +39,7 @@
 
 #include "SPAbuseFilter.h"
 
-#include "SPLoveManager.h"
+#include "SPLove/SPLoveManager.h"
 
 #ifdef _DEBUG
 #include "SPDebug.h"

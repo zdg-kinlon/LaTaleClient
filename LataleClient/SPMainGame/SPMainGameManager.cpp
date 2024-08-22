@@ -102,7 +102,7 @@
 #include "SPCashTradeManager.h"
 #include "SPAuctionManager.h"
 #include "SPChatManager.h"
-#include "SPLoveManager.h"
+#include "SPLove/SPLoveManager.h"
 
 #include "SPLocalizeManager.h"
 #include "GlobalDefines_Share.h"

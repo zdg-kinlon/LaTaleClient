@@ -726,7 +726,7 @@ int SPWindowItemMix::OnItemMixResult( WPARAM wParam, LPARAM lParam )
 
 	SPItem*	pOldItem;
 
-	for( i = 0 ; i < MATERIAL_BOX_COUNT ; ++i )
+	for( int i = 0 ; i < MATERIAL_BOX_COUNT ; ++i )
 	{
 		pOldItem	=	m_pMaterialItem[ i ];
 
@@ -1760,7 +1760,7 @@ void SPWindowItemMix::SetMaterialItem( SPItem* pMaterialItem )
 	{
 		bool	bRequire	=	true;
 
-		for( i = 0 ; i < MAX_ITEM_MIX_REQUIRE ; ++i )
+		for( int i = 0 ; i < MAX_ITEM_MIX_REQUIRE ; ++i )
 		{
 			if( g_pCheckManager->CheckCondition( m_pCurItemMix->m_stRequireType[ i ].m_iType , m_pCurItemMix->m_stRequireType[ i ].m_iID , m_pCurItemMix->m_stRequireType[ i ].m_iValue1 , m_pCurItemMix->m_stRequireType[ i ].m_iValue2 ) == false )
 			{
@@ -2163,7 +2163,7 @@ void SPWindowItemMix::SendServerRun()
 
 	//////////////////////////////////////////////////////////////////////////
 
-	for( i = 0 ; i < MAX_ITEM_UPGRADE_MATERIAL ; ++i )
+	for( int i = 0 ; i < MAX_ITEM_UPGRADE_MATERIAL ; ++i )
 	{
 		if( g_pCheckManager->CheckCondition( m_pCurItemMix->m_stRequireType[ i ].m_iType , m_pCurItemMix->m_stRequireType[ i ].m_iID , m_pCurItemMix->m_stRequireType[ i ].m_iValue1 , m_pCurItemMix->m_stRequireType[ i ].m_iValue2 ) == false )
 			return;

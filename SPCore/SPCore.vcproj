@@ -1,501 +1,784 @@
 <?xml version="1.0" encoding="ks_c_5601-1987"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="7.10"
+	Version="8.00"
 	Name="SPCore"
 	ProjectGUID="{D7DF051C-CA67-4849-9315-009A62CFC762}"
 	RootNamespace="SPCore"
-	SccProjectName=""
-	SccAuxPath=""
-	SccLocalPath=""
-	SccProvider=""
-	Keyword="ManagedCProj">
+	Keyword="ManagedCProj"
+	>
 	<Platforms>
 		<Platform
-			Name="Win32"/>
+			Name="Win32"
+		/>
 	</Platforms>
+	<ToolFiles>
+	</ToolFiles>
 	<Configurations>
 		<Configuration
 			Name="Debug|Win32"
 			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="4"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			CharacterSet="2"
-			ManagedExtensions="FALSE">
+			ManagedExtensions="0"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				AdditionalIncludeDirectories="./;./SPVideoCore;./SPInputCore;./SPSoundCore;./SPResourceCore;./SPUtilCore;./SPMathCore"
 				PreprocessorDefinitions="WIN32;_DEBUG;_SP_CORE;_SP_VIDEO_DEBUG"
-				MinimalRebuild="FALSE"
+				MinimalRebuild="false"
 				BasicRuntimeChecks="0"
 				RuntimeLibrary="1"
 				WarningLevel="3"
-				DebugInformationFormat="4"/>
+				DebugInformationFormat="4"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="$(OutDir)/$(ProjectName)D.lib"/>
+				OutputFile="$(OutDir)/$(ProjectName)D.lib"
+			/>
 			<Tool
-				Name="VCMIDLTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCPostBuildEventTool"/>
+				Name="VCXDCMakeTool"
+			/>
 			<Tool
-				Name="VCPreBuildEventTool"/>
+				Name="VCBscMakeTool"
+			/>
 			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCFxCopTool"
+			/>
 			<Tool
-				Name="VCResourceCompilerTool"/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"/>
-			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
-			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 		<Configuration
 			Name="Release|Win32"
 			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="4"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			CharacterSet="2"
-			ManagedExtensions="FALSE">
+			ManagedExtensions="0"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				FavorSizeOrSpeed="0"
 				AdditionalIncludeDirectories="./;./SPVideoCore;./SPInputCore;./SPSoundCore;./SPResourceCore;./SPUtilCore;./SPMathCore"
 				PreprocessorDefinitions="WIN32;NDEBUG;_SP_CORE;_SP_VIDEO_RELEASE"
-				MinimalRebuild="FALSE"
+				MinimalRebuild="false"
 				RuntimeLibrary="0"
 				WarningLevel="3"
-				DebugInformationFormat="3"/>
+				DebugInformationFormat="3"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="$(OutDir)/$(ProjectName)R.lib"/>
+				OutputFile="$(OutDir)/$(ProjectName)R.lib"
+			/>
 			<Tool
-				Name="VCMIDLTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCPostBuildEventTool"/>
+				Name="VCXDCMakeTool"
+			/>
 			<Tool
-				Name="VCPreBuildEventTool"/>
+				Name="VCBscMakeTool"
+			/>
 			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCFxCopTool"
+			/>
 			<Tool
-				Name="VCResourceCompilerTool"/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"/>
-			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
-			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 		<Configuration
 			Name="DEBUG_RES_LOCAL|Win32"
 			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="4"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			CharacterSet="2"
-			ManagedExtensions="FALSE">
+			ManagedExtensions="0"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				AdditionalIncludeDirectories="./;./SPVideoCore;./SPInputCore;./SPSoundCore;./SPResourceCore;./SPUtilCore;./SPMathCore"
 				PreprocessorDefinitions="WIN32;_DEBUG;_SP_CORE;_SP_VIDEO_DEBUG"
-				MinimalRebuild="FALSE"
+				MinimalRebuild="false"
 				BasicRuntimeChecks="0"
 				RuntimeLibrary="1"
 				WarningLevel="3"
-				DebugInformationFormat="4"/>
+				DebugInformationFormat="4"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="$(OutDir)/$(ProjectName)D.lib"/>
+				OutputFile="$(OutDir)/$(ProjectName)D.lib"
+			/>
 			<Tool
-				Name="VCMIDLTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCPostBuildEventTool"/>
+				Name="VCXDCMakeTool"
+			/>
 			<Tool
-				Name="VCPreBuildEventTool"/>
+				Name="VCBscMakeTool"
+			/>
 			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCFxCopTool"
+			/>
 			<Tool
-				Name="VCResourceCompilerTool"/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"/>
-			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
-			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 		<Configuration
 			Name="DEBUG_NEWPACK|Win32"
 			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="4"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			CharacterSet="2"
-			ManagedExtensions="FALSE">
+			ManagedExtensions="0"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				AdditionalIncludeDirectories="./;./SPVideoCore;./SPInputCore;./SPSoundCore;./SPResourceCore;./SPUtilCore;./SPMathCore"
 				PreprocessorDefinitions="WIN32;_DEBUG;_SP_CORE;_SP_VIDEO_DEBUG;_NEWPACK"
-				MinimalRebuild="FALSE"
+				MinimalRebuild="false"
 				BasicRuntimeChecks="0"
 				RuntimeLibrary="1"
 				WarningLevel="3"
-				DebugInformationFormat="3"/>
+				DebugInformationFormat="3"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="$(OutDir)/$(ProjectName)D.lib"/>
+				OutputFile="$(OutDir)/$(ProjectName)D.lib"
+			/>
 			<Tool
-				Name="VCMIDLTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCPostBuildEventTool"/>
+				Name="VCXDCMakeTool"
+			/>
 			<Tool
-				Name="VCPreBuildEventTool"/>
+				Name="VCBscMakeTool"
+			/>
 			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCFxCopTool"
+			/>
 			<Tool
-				Name="VCResourceCompilerTool"/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"/>
-			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
-			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 		<Configuration
 			Name="ReleaseDebug|Win32"
 			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="4"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			CharacterSet="2"
-			ManagedExtensions="FALSE">
+			ManagedExtensions="0"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				FavorSizeOrSpeed="1"
 				AdditionalIncludeDirectories="./;./SPVideoCore;./SPInputCore;./SPSoundCore;./SPResourceCore;./SPUtilCore;./SPMathCore"
 				PreprocessorDefinitions="WIN32;NDEBUG;_SP_CORE;_SP_VIDEO_RELEASE"
-				MinimalRebuild="FALSE"
+				MinimalRebuild="false"
 				RuntimeLibrary="0"
 				WarningLevel="3"
-				DebugInformationFormat="0"/>
+				DebugInformationFormat="0"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="$(OutDir)/$(ProjectName)R.lib"/>
+				OutputFile="$(OutDir)/$(ProjectName)R.lib"
+			/>
 			<Tool
-				Name="VCMIDLTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCPostBuildEventTool"/>
+				Name="VCXDCMakeTool"
+			/>
 			<Tool
-				Name="VCPreBuildEventTool"/>
+				Name="VCBscMakeTool"
+			/>
 			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCFxCopTool"
+			/>
 			<Tool
-				Name="VCResourceCompilerTool"/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"/>
-			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
-			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 		<Configuration
 			Name="Debug_Just_Run|Win32"
 			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="4"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			CharacterSet="2"
-			ManagedExtensions="FALSE">
+			ManagedExtensions="0"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				AdditionalIncludeDirectories="./;./SPVideoCore;./SPInputCore;./SPSoundCore;./SPResourceCore;./SPUtilCore;./SPMathCore"
 				PreprocessorDefinitions="WIN32;_DEBUG;_SP_CORE;_SP_VIDEO_DEBUG"
-				MinimalRebuild="FALSE"
+				MinimalRebuild="false"
 				BasicRuntimeChecks="0"
 				RuntimeLibrary="1"
 				WarningLevel="3"
-				DebugInformationFormat="4"/>
+				DebugInformationFormat="4"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="$(OutDir)/$(ProjectName)D.lib"/>
+				OutputFile="$(OutDir)/$(ProjectName)D.lib"
+			/>
 			<Tool
-				Name="VCMIDLTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCPostBuildEventTool"/>
+				Name="VCXDCMakeTool"
+			/>
 			<Tool
-				Name="VCPreBuildEventTool"/>
+				Name="VCBscMakeTool"
+			/>
 			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCFxCopTool"
+			/>
 			<Tool
-				Name="VCResourceCompilerTool"/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"/>
-			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
-			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 		<Configuration
 			Name="Release_Just_Run|Win32"
 			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="4"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			CharacterSet="2"
-			ManagedExtensions="FALSE">
+			ManagedExtensions="0"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				FavorSizeOrSpeed="1"
 				AdditionalIncludeDirectories="./;./SPVideoCore;./SPInputCore;./SPSoundCore;./SPResourceCore;./SPUtilCore;./SPMathCore"
 				PreprocessorDefinitions="WIN32;NDEBUG;_SP_CORE;_SP_VIDEO_RELEASE"
-				MinimalRebuild="FALSE"
+				MinimalRebuild="false"
 				RuntimeLibrary="0"
 				WarningLevel="3"
-				DebugInformationFormat="0"/>
+				DebugInformationFormat="0"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="$(OutDir)/$(ProjectName)R.lib"/>
+				OutputFile="$(OutDir)/$(ProjectName)R.lib"
+			/>
 			<Tool
-				Name="VCMIDLTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCPostBuildEventTool"/>
+				Name="VCXDCMakeTool"
+			/>
 			<Tool
-				Name="VCPreBuildEventTool"/>
+				Name="VCBscMakeTool"
+			/>
 			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCFxCopTool"
+			/>
 			<Tool
-				Name="VCResourceCompilerTool"/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"/>
-			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
-			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 		<Configuration
 			Name="DEBUG_RES_ELIAS|Win32"
 			IntermediateDirectory="$(ConfigurationName)"
-			ConfigurationType="1">
+			ConfigurationType="1"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
+			>
 			<Tool
-				Name="VCCLCompilerTool"/>
+				Name="VCPreBuildEventTool"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
+				Name="VCCustomBuildTool"
+			/>
 			<Tool
-				Name="VCLinkerTool"/>
+				Name="VCXMLDataGeneratorTool"
+			/>
 			<Tool
-				Name="VCMIDLTool"/>
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
 			<Tool
-				Name="VCPostBuildEventTool"/>
+				Name="VCMIDLTool"
+			/>
 			<Tool
-				Name="VCPreBuildEventTool"/>
+				Name="VCCLCompilerTool"
+			/>
 			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
 			<Tool
-				Name="VCResourceCompilerTool"/>
+				Name="VCResourceCompilerTool"
+			/>
 			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
-				Name="VCXMLDataGeneratorTool"/>
+				Name="VCLinkerTool"
+			/>
 			<Tool
-				Name="VCWebDeploymentTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
+				Name="VCManifestTool"
+			/>
 			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCAppVerifierTool"
+			/>
+			<Tool
+				Name="VCWebDeploymentTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 		<Configuration
 			Name="debugGuild|Win32"
 			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="4"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			CharacterSet="2"
-			ManagedExtensions="FALSE">
+			ManagedExtensions="0"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				AdditionalIncludeDirectories="./;./SPVideoCore;./SPInputCore;./SPSoundCore;./SPResourceCore;./SPUtilCore;./SPMathCore"
 				PreprocessorDefinitions="WIN32;_DEBUG;_SP_CORE;_SP_VIDEO_DEBUG"
-				MinimalRebuild="FALSE"
+				MinimalRebuild="false"
 				BasicRuntimeChecks="0"
 				RuntimeLibrary="1"
 				WarningLevel="3"
-				DebugInformationFormat="4"/>
+				DebugInformationFormat="4"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="$(OutDir)/$(ProjectName)D.lib"/>
+				OutputFile="$(OutDir)/$(ProjectName)D.lib"
+			/>
 			<Tool
-				Name="VCMIDLTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCPostBuildEventTool"/>
+				Name="VCXDCMakeTool"
+			/>
 			<Tool
-				Name="VCPreBuildEventTool"/>
+				Name="VCBscMakeTool"
+			/>
 			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCFxCopTool"
+			/>
 			<Tool
-				Name="VCResourceCompilerTool"/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"/>
-			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
-			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 		<Configuration
 			Name="DebugRSClient|Win32"
 			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="4"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			CharacterSet="2"
-			ManagedExtensions="FALSE">
+			ManagedExtensions="0"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				AdditionalIncludeDirectories="./;./SPVideoCore;./SPInputCore;./SPSoundCore;./SPResourceCore;./SPUtilCore;./SPMathCore"
 				PreprocessorDefinitions="WIN32;_DEBUG;_SP_CORE;_SP_VIDEO_DEBUG"
-				MinimalRebuild="FALSE"
+				MinimalRebuild="false"
 				BasicRuntimeChecks="0"
 				RuntimeLibrary="1"
 				WarningLevel="3"
-				DebugInformationFormat="4"/>
+				DebugInformationFormat="4"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="$(OutDir)/$(ProjectName)D.lib"/>
+				OutputFile="$(OutDir)/$(ProjectName)D.lib"
+			/>
 			<Tool
-				Name="VCMIDLTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCPostBuildEventTool"/>
+				Name="VCXDCMakeTool"
+			/>
 			<Tool
-				Name="VCPreBuildEventTool"/>
+				Name="VCBscMakeTool"
+			/>
 			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCFxCopTool"
+			/>
 			<Tool
-				Name="VCResourceCompilerTool"/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"/>
-			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
-			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 		<Configuration
 			Name="DebugPVP|Win32"
 			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="4"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			CharacterSet="2"
-			ManagedExtensions="FALSE">
+			ManagedExtensions="0"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				AdditionalIncludeDirectories="./;./SPVideoCore;./SPInputCore;./SPSoundCore;./SPResourceCore;./SPUtilCore;./SPMathCore"
 				PreprocessorDefinitions="WIN32;_DEBUG;_SP_CORE;_SP_VIDEO_DEBUG"
-				MinimalRebuild="FALSE"
+				MinimalRebuild="false"
 				BasicRuntimeChecks="0"
 				RuntimeLibrary="1"
 				WarningLevel="3"
-				DebugInformationFormat="4"/>
+				DebugInformationFormat="4"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="$(OutDir)/$(ProjectName)D.lib"/>
+				OutputFile="$(OutDir)/$(ProjectName)D.lib"
+			/>
 			<Tool
-				Name="VCMIDLTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCPostBuildEventTool"/>
+				Name="VCXDCMakeTool"
+			/>
 			<Tool
-				Name="VCPreBuildEventTool"/>
+				Name="VCBscMakeTool"
+			/>
 			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCFxCopTool"
+			/>
 			<Tool
-				Name="VCResourceCompilerTool"/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"/>
-			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
-			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 		<Configuration
 			Name="mycfg|Win32"
 			OutputDirectory="$(SolutionDir)$(ConfigurationName)"
 			IntermediateDirectory="$(ConfigurationName)"
 			ConfigurationType="4"
+			InheritedPropertySheets="$(VCInstallDir)VCProjectDefaults\UpgradeFromVC71.vsprops"
 			CharacterSet="2"
-			ManagedExtensions="FALSE">
+			ManagedExtensions="0"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
 				AdditionalIncludeDirectories="./;./SPVideoCore;./SPInputCore;./SPSoundCore;./SPResourceCore;./SPUtilCore;./SPMathCore"
 				PreprocessorDefinitions="WIN32;_DEBUG;_SP_CORE;_SP_VIDEO_DEBUG"
-				MinimalRebuild="FALSE"
+				MinimalRebuild="false"
 				BasicRuntimeChecks="0"
 				RuntimeLibrary="1"
 				WarningLevel="3"
-				DebugInformationFormat="4"/>
+				DebugInformationFormat="4"
+			/>
 			<Tool
-				Name="VCCustomBuildTool"/>
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
 			<Tool
 				Name="VCLibrarianTool"
-				OutputFile="$(OutDir)/$(ProjectName)D.lib"/>
+				OutputFile="$(OutDir)/$(ProjectName)D.lib"
+			/>
 			<Tool
-				Name="VCMIDLTool"/>
+				Name="VCALinkTool"
+			/>
 			<Tool
-				Name="VCPostBuildEventTool"/>
+				Name="VCXDCMakeTool"
+			/>
 			<Tool
-				Name="VCPreBuildEventTool"/>
+				Name="VCBscMakeTool"
+			/>
 			<Tool
-				Name="VCPreLinkEventTool"/>
+				Name="VCFxCopTool"
+			/>
 			<Tool
-				Name="VCResourceCompilerTool"/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"/>
-			<Tool
-				Name="VCManagedWrapperGeneratorTool"/>
-			<Tool
-				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+				Name="VCPostBuildEventTool"
+			/>
 		</Configuration>
 	</Configurations>
 	<References>
@@ -503,223 +786,287 @@
 	<Files>
 		<Filter
 			Name="SPVideoCore"
-			Filter="">
+			>
 			<File
-				RelativePath=".\SPVideoCore\CD3DEnumeration.cpp">
+				RelativePath=".\SPVideoCore\CD3DEnumeration.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\SPVideoCore\CD3DEnumeration.h">
+				RelativePath=".\SPVideoCore\CD3DEnumeration.h"
+				>
 			</File>
 			<File
-				RelativePath=".\SPVideoCore\d3dsettings.cpp">
+				RelativePath=".\SPVideoCore\d3dsettings.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\SPVideoCore\d3dsettings.h">
+				RelativePath=".\SPVideoCore\d3dsettings.h"
+				>
 			</File>
 			<File
-				RelativePath=".\SPVideoCore\dxutil.cpp">
+				RelativePath=".\SPVideoCore\dxutil.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\SPVideoCore\dxutil.h">
+				RelativePath=".\SPVideoCore\dxutil.h"
+				>
 			</File>
 			<File
-				RelativePath=".\SPVideoCore\SPFont.cpp">
+				RelativePath=".\SPVideoCore\SPFont.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\SPVideoCore\SPFont.h">
+				RelativePath=".\SPVideoCore\SPFont.h"
+				>
 			</File>
 			<File
-				RelativePath=".\SPVideoCore\SPLine.cpp">
+				RelativePath=".\SPVideoCore\SPLine.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\SPVideoCore\SPLine.h">
+				RelativePath=".\SPVideoCore\SPLine.h"
+				>
 			</File>
 			<File
-				RelativePath=".\SPVideoCore\SPTexture.cpp">
+				RelativePath=".\SPVideoCore\SPTexture.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\SPVideoCore\SPTexture.h">
+				RelativePath=".\SPVideoCore\SPTexture.h"
+				>
 			</File>
 			<File
-				RelativePath=".\SPVideoCore\SPVideo.cpp">
+				RelativePath=".\SPVideoCore\SPVideo.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\SPVideoCore\SPVideo.h">
+				RelativePath=".\SPVideoCore\SPVideo.h"
+				>
 			</File>
 			<File
-				RelativePath=".\SPVideoCore\SPVideoCommon.h">
+				RelativePath=".\SPVideoCore\SPVideoCommon.h"
+				>
 			</File>
 		</Filter>
 		<Filter
 			Name="SPInputCore"
-			Filter="">
+			>
 			<File
-				RelativePath=".\SPInputCore\SPInput.cpp">
+				RelativePath=".\SPInputCore\SPInput.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\SPInputCore\SPInput.h">
+				RelativePath=".\SPInputCore\SPInput.h"
+				>
 			</File>
 			<File
-				RelativePath=".\SPInputCore\SPInputDef.h">
+				RelativePath=".\SPInputCore\SPInputDef.h"
+				>
 			</File>
 		</Filter>
 		<Filter
 			Name="SPSoundCore"
-			Filter="">
+			>
 			<File
-				RelativePath=".\SPSoundCore\mss.h">
+				RelativePath=".\SPSoundCore\mss.h"
+				>
 			</File>
 			<File
-				RelativePath=".\SPSoundCore\mss32.lib">
+				RelativePath=".\SPSoundCore\mss32.lib"
+				>
 			</File>
 			<File
-				RelativePath=".\SPSoundCore\SPSoundArchive.cpp">
+				RelativePath=".\SPSoundCore\SPSoundArchive.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\SPSoundCore\SPSoundArchive.h">
+				RelativePath=".\SPSoundCore\SPSoundArchive.h"
+				>
 			</File>
 			<File
-				RelativePath=".\SPSoundCore\SPSoundBase.cpp">
+				RelativePath=".\SPSoundCore\SPSoundBase.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\SPSoundCore\SPSoundBase.h">
+				RelativePath=".\SPSoundCore\SPSoundBase.h"
+				>
 			</File>
 			<File
-				RelativePath=".\SPSoundCore\SPSoundUnit.cpp">
+				RelativePath=".\SPSoundCore\SPSoundUnit.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\SPSoundCore\SPSoundUnit.h">
+				RelativePath=".\SPSoundCore\SPSoundUnit.h"
+				>
 			</File>
 		</Filter>
 		<Filter
 			Name="SPResourceCore"
-			Filter="">
+			>
 			<File
-				RelativePath=".\SPResourceCore\SPFileDef.h">
+				RelativePath=".\SPResourceCore\SPFileDef.h"
+				>
 			</File>
 			<File
-				RelativePath=".\SPResourceCore\SPResourceBase.cpp">
+				RelativePath=".\SPResourceCore\SPResourceBase.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\SPResourceCore\SPResourceBase.h">
+				RelativePath=".\SPResourceCore\SPResourceBase.h"
+				>
 			</File>
 			<File
-				RelativePath=".\SPResourceCore\SPResourceBaseDEF.cpp">
+				RelativePath=".\SPResourceCore\SPResourceBaseDEF.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\SPResourceCore\SPResourceBaseDEF.h">
+				RelativePath=".\SPResourceCore\SPResourceBaseDEF.h"
+				>
 			</File>
 			<File
-				RelativePath=".\SPResourceCore\SPStream.cpp">
+				RelativePath=".\SPResourceCore\SPStream.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\SPResourceCore\SPStream.h">
+				RelativePath=".\SPResourceCore\SPStream.h"
+				>
 			</File>
 			<File
-				RelativePath=".\SPResourceCore\SPTextureMgr.cpp">
+				RelativePath=".\SPResourceCore\SPTextureMgr.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\SPResourceCore\SPTextureMgr.h">
+				RelativePath=".\SPResourceCore\SPTextureMgr.h"
+				>
 			</File>
 		</Filter>
 		<Filter
 			Name="SPUtilCore"
-			Filter="">
+			>
 			<File
-				RelativePath=".\SPUtilCore\msxml2.h">
+				RelativePath=".\SPUtilCore\msxml2.h"
+				>
 			</File>
 			<File
-				RelativePath=".\SPUtilCore\msxml2.idl">
+				RelativePath=".\SPUtilCore\msxml2.idl"
+				>
 			</File>
 			<File
-				RelativePath=".\SPUtilCore\msxml2did.h">
+				RelativePath=".\SPUtilCore\msxml2did.h"
+				>
 			</File>
 			<File
-				RelativePath=".\SPUtilCore\SPGlobalTimer.cpp">
+				RelativePath=".\SPUtilCore\SPGlobalTimer.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\SPUtilCore\SPGlobalTimer.h">
+				RelativePath=".\SPUtilCore\SPGlobalTimer.h"
+				>
 			</File>
 			<File
-				RelativePath=".\SPUtilCore\SPIngameWebbrowser.cpp">
+				RelativePath=".\SPUtilCore\SPIngameWebbrowser.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\SPUtilCore\SPIngameWebbrowser.h">
+				RelativePath=".\SPUtilCore\SPIngameWebbrowser.h"
+				>
 			</File>
 			<File
-				RelativePath=".\SPUtilCore\SPRefOLE.cpp">
+				RelativePath=".\SPUtilCore\SPRefOLE.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\SPUtilCore\SPRefOLE.h">
+				RelativePath=".\SPUtilCore\SPRefOLE.h"
+				>
 			</File>
 			<File
-				RelativePath=".\SPUtilCore\SPRegistry.cpp">
+				RelativePath=".\SPUtilCore\SPRegistry.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\SPUtilCore\SPRegistry.h">
+				RelativePath=".\SPUtilCore\SPRegistry.h"
+				>
 			</File>
 			<File
-				RelativePath=".\SPUtilCore\SPUtil.cpp">
+				RelativePath=".\SPUtilCore\SPUtil.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\SPUtilCore\SPUtil.h">
+				RelativePath=".\SPUtilCore\SPUtil.h"
+				>
 			</File>
 			<Filter
 				Name="SPMathCore"
-				Filter="">
+				>
 				<File
-					RelativePath=".\SPMathCore\SPBezier.cpp">
+					RelativePath=".\SPMathCore\SPBezier.cpp"
+					>
 				</File>
 				<File
-					RelativePath=".\SPMathCore\SPBezier.h">
+					RelativePath=".\SPMathCore\SPBezier.h"
+					>
 				</File>
 				<File
-					RelativePath=".\SPMathCore\SPVector.cpp">
+					RelativePath=".\SPMathCore\SPVector.cpp"
+					>
 				</File>
 				<File
-					RelativePath=".\SPMathCore\SPVector.h">
+					RelativePath=".\SPMathCore\SPVector.h"
+					>
 				</File>
 				<File
-					RelativePath=".\SPMathCore\SPVector.inl">
+					RelativePath=".\SPMathCore\SPVector.inl"
+					>
 				</File>
 			</Filter>
 		</Filter>
 		<Filter
 			Name="SPFont"
-			Filter="">
+			>
 			<File
-				RelativePath=".\spfont\crc32.cpp">
+				RelativePath=".\spfont\crc32.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\spfont\crc32.h">
+				RelativePath=".\spfont\crc32.h"
+				>
 			</File>
 			<File
-				RelativePath=".\spfont\fixpool.cpp">
+				RelativePath=".\spfont\fixpool.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\spfont\fixpool.h">
+				RelativePath=".\spfont\fixpool.h"
+				>
 			</File>
 			<File
-				RelativePath=".\spfont\FontManager.cpp">
+				RelativePath=".\spfont\FontManager.cpp"
+				>
 			</File>
 			<File
-				RelativePath=".\spfont\FontManager.h">
+				RelativePath=".\spfont\FontManager.h"
+				>
 			</File>
 			<File
-				RelativePath=".\spfont\FreeType.h">
+				RelativePath=".\spfont\FreeType.h"
+				>
 			</File>
 		</Filter>
 		<File
-			RelativePath=".\IGWInterface.h">
+			RelativePath=".\IGWInterface.h"
+			>
 		</File>
 		<File
-			RelativePath=".\IGWLoaderDx9.cpp">
+			RelativePath=".\IGWLoaderDx9.cpp"
+			>
 		</File>
 		<File
-			RelativePath=".\IGWLoaderDx9.h">
+			RelativePath=".\IGWLoaderDx9.h"
+			>
 		</File>
 		<File
-			RelativePath=".\SPCoreDef.h">
+			RelativePath=".\SPCoreDef.h"
+			>
 		</File>
 	</Files>
 	<Globals>

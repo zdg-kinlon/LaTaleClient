@@ -669,7 +669,7 @@ bool SPWindowGamble::RunGamble( int iGambleID , UINT8 iBattingCount , STD_VECTOR
 
 	if( pvGambleRewardAutoSell != NULL )
 	{
-		for( i = 0 ; i < iNumOfAutoSell ; ++i )
+		for( int i = 0 ; i < iNumOfAutoSell ; ++i )
 		{
 			iGambleRewardAutoSell	=	pvGambleRewardAutoSell->at( i );
 

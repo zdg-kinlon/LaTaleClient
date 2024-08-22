@@ -46,7 +46,7 @@
 #include "SPGuildArchive.h"
 #include "SPGuildLDT.h"
 #include "SPWindowGuildEmblem.h"
-#include "SPLoveManager.h"
+#include "SPLove/SPLoveManager.h"
 
 //------------------------------------------------------------------------------------
 SPPlayerStatusModel::SPPlayerStatusModel(SPPlayer* pkParent)
@@ -337,7 +337,7 @@ void SPPlayerStatusModel::Render(float fTime)
 					int	iStrCount	=	(int)m_vTalkBalloonText.size();
 
 					pkFont->SetShadow(false);
-					for( i = 0 ; i < iStrCount ; i++ )
+					for( int i = 0 ; i < iStrCount ; i++ )
 					{
 						pkFont->SetColor( m_colorTalkBalloonText );
 						pkFont->RenderText( m_vTalkBalloonText.at( i ).c_str(), &( m_vTalkBallonTextDestRgn.at( i ) ) , DT_VCENTER | DT_CENTER );
@@ -493,7 +493,7 @@ void SPPlayerStatusModel::SetObjectRgn(RECT& rcRgn, int iCenterPosX, int iCenter
 		rcTalkBallonTextDestRgn.top		= m_rcTalkBallonImageDestRgn[ TALKBALLON_MIDDLE ].bottom;
 		rcTalkBallonTextDestRgn.bottom	= m_rcTalkBallonImageDestRgn[ TALKBALLON_MIDDLE ].bottom + iTalkFontHeight;
 
-		for( i = 0 ; i < iStrCount ; i++ )
+		for( int i = 0 ; i < iStrCount ; i++ )
 		{
 			rcTalkBallonTextDestRgn.top		-= iTalkFontHeight;
 			rcTalkBallonTextDestRgn.bottom	-= iTalkFontHeight;

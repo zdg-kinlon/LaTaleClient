@@ -245,7 +245,7 @@ void SPWindowHelp::Render( float fTime )
 
 	g_pVideo->Flush();
 
-	for( i = 0 ; i < HELP_TEXTURE_COUNT ; i++ )
+	for( int i = 0 ; i < HELP_TEXTURE_COUNT ; i++ )
 	{
 		pHelpTexture	=	&m_vContentTexture.at( i );
 

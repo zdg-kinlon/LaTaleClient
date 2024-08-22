@@ -30,7 +30,7 @@
 
 #include "lgclientlog.h"
 
-#include "AutoInterface.h"
+#include "AutoPlay/AutoInterface.h"
 
 #define _CRTDBG_MAP_ALLOC
 #include <stdlib.h>

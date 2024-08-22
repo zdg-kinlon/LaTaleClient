@@ -523,7 +523,7 @@ void SPWindowBeautyShop::initCurUserLayer(bool bUpdate)
 	if( bUpdate )
 	{
 		SPWindow* pkCateStatic, *pkExplainStatic;
-		for( i = 0; i < BS_INDEX_MAX; i++ )
+		for( int i = 0; i < BS_INDEX_MAX; i++ )
 		{
 			m_strCategory[i] = m_pBSData->GetCategoryString(true, i) ;
 			m_strDetail[i] = m_pBSData->GetDetailString(true, i) ;
@@ -850,7 +850,7 @@ void SPWindowBeautyShop::RenderBackground(float fTime)
 		}
 
 		// Dialog Ã¢ ¹è°æ
-		for( i = 0; i < 29; i++)
+		for(int i = 0; i < 29; i++)
 		{
 			m_pkBGTexture->RenderTexture( &m_rcDstDlgBack[i] , &m_rcSrcDlgBack[i] );
 		}

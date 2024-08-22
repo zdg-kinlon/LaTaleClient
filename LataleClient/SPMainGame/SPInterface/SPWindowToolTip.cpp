@@ -193,7 +193,7 @@ void SPWindowToolTip::Init()
 	iYPos	+=	19;
 	iYSize	=	11;
 
-	for( i = 0 ; i < MAX_TOOLTIP_CONTENTS_LINE ; ++i )
+	for( int i = 0 ; i < MAX_TOOLTIP_CONTENTS_LINE ; ++i )
 	{
 		m_pContents2[ i ]	=	new	SPWindowStatic( WIID_TOOLTIP_CONTENTS2 + i , iXPos , iYPos , iXSize , iYSize , this );
 		m_pContents2[ i ]->SetFontShadow( false );

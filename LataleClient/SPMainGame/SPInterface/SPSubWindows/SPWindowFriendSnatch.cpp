@@ -1010,6 +1010,7 @@ void SPWindowFriendSnatch::UpdateWhiteList( int iPage )
 
 	FRIEND_INFO*	pFriendInfo;
 
+	int i;
 	for( i = 0 ; i < WIID_FRIEND_SNATCH_WHITE_LIST_MAX_USER ; i++ )
 	{
 		if( bOnLine == TRUE )

@@ -4013,7 +4013,8 @@ void SPWindowTalkingRoom::UpdateSubject()
 	int	iNumber;
 	std::string	strNumber;
 
-	for( int i = 0 ; i < istrLength ; ++i )
+	int i;
+	for( i = 0 ; i < istrLength ; ++i )
 	{
 		strNumber	=	szBuf[ i ];
 		iNumber		=	atoi( strNumber.c_str() );

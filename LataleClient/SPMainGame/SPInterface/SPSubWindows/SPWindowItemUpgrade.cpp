@@ -718,7 +718,8 @@ void SPWindowItemUpgrade::UpdatePosUIItemUnit()
 	SPWindow*		pWindow	=	NULL;
 	RECT			rcPos;
 
-	for( int i = 0 ; i < WIID_ITEM_UPGRADE_MATERIAL_BOX_COUNT ; ++i )
+	int i;
+	for( i = 0 ; i < WIID_ITEM_UPGRADE_MATERIAL_BOX_COUNT ; ++i )
 	{
 		pUIItemUnit	=	(SPUIItemUnit*)m_UIUnitManager.GetUnit( i );
 
@@ -1324,7 +1325,7 @@ void SPWindowItemUpgrade::SetUpgradeItem( SPItem* pUpgradeItem )
 	SPItemAttr*		pMaterialItemAttr	=	NULL;
 	SPWindow*		pWindowMaterialBox	=	NULL;
 
-	for( i = 0 ; i < MAX_ITEM_UPGRADE_MATERIAL ; ++i )
+	for( int i = 0 ; i < MAX_ITEM_UPGRADE_MATERIAL ; ++i )
 	{
 		pWindowMaterialBox	=	pMaterialPanel->Find( WIID_ITEM_UPGRADE_MATERIAL_BOX_START + i );
 
@@ -1470,7 +1471,7 @@ void SPWindowItemUpgrade::SetMaterialItem( SPItem* pMaterialItem )
 	{
 		bool	bRequire	=	true;
 
-		for( i = 0 ; i < MAX_ITEM_UPGRADE_REQUIRE ; ++i )
+		for( int i = 0 ; i < MAX_ITEM_UPGRADE_REQUIRE ; ++i )
 		{
 			if( g_pCheckManager->CheckCondition( pItemUpgrade->m_stRequireType[ i ].m_iType , pItemUpgrade->m_stRequireType[ i ].m_iID , pItemUpgrade->m_stRequireType[ i ].m_iValue1 , pItemUpgrade->m_stRequireType[ i ].m_iValue2 ) == false )
 			{
@@ -1592,7 +1593,7 @@ void SPWindowItemUpgrade::SendServerRun()
 
 	//////////////////////////////////////////////////////////////////////////
 
-	for( i = 0 ; i < MAX_ITEM_UPGRADE_REQUIRE ; ++i )
+	for( int i = 0 ; i < MAX_ITEM_UPGRADE_REQUIRE ; ++i )
 	{
 		if( g_pCheckManager->CheckCondition( pItemUpgrade->m_stRequireType[ i ].m_iType , pItemUpgrade->m_stRequireType[ i ].m_iID , pItemUpgrade->m_stRequireType[ i ].m_iValue1 , pItemUpgrade->m_stRequireType[ i ].m_iValue2 ) == false )
 			return;

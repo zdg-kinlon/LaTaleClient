@@ -45,7 +45,7 @@ void SPTitleAttr::Init()
 		m_iStatusValue[ i ]	=	0;
 	}
 
-	for( i = 0 ; i < TITLE_EFFECT_COUNT ; ++i )
+	for( int i = 0 ; i < TITLE_EFFECT_COUNT ; ++i )
 	{
 		m_dwEffect[ i ]	=	0;
 		m_strEffectDesc[ i ].clear();

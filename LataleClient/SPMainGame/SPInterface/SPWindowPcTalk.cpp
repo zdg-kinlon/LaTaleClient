@@ -67,7 +67,7 @@
 #include "SPStoryManager.h"
 #include "SPWayPointManager.h"
 
-#include "SPLoveManager.h"
+#include "SPLove/SPLoveManager.h"
 #include "SPCheckManager.h"
 
 #include "SPWindowNpcTalk.h"

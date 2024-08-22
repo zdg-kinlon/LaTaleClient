@@ -84,7 +84,7 @@
 
 #include "SPWindowLottery.h"
 
-#include "FontManager.h"
+#include "SPFont/FontManager.h"
 #include "atlconv.h"
 #include <tinyxml.h>
 

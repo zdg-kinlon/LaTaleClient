@@ -98,7 +98,7 @@
 #include "lgclientlog.h"
 #include "SPWindowPushprop.h"
 
-#include "AutoInterface.h"
+#include "AutoPlay/AutoInterface.h"
 
 
 extern WORLD_ID g_uiWorldID;

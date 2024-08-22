@@ -51,7 +51,7 @@
 
 #include "SPCashTradeManager.h"
 
-#include "SPLoveManager.h"
+#include "SPLove/SPLoveManager.h"
 
 #include "SPDebug.h"
 #include "SPUtil.h"

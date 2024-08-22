@@ -32,7 +32,7 @@
 
 #include "SPSubGameManager.h"
 
-#include "autointerface.h"
+#include "AutoPlay/AutoInterface.h"
 
 
 SPPlayerActionManager::SPPlayerActionManager()

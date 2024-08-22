@@ -2866,7 +2866,7 @@ int SPWindowLobby::OnZenderClick(unsigned int uiID, WPARAM, LPARAM)
 			pkWindow->SPSendMessage(SPIM_BTN_SELECT, FALSE);
 	}
 
-	for( i = 0; i < 7; i++ )
+	for( int i = 0; i < 7; i++ )
 		m_iCurLayerIndex[i] = 0;
 
 	SetCurSelectLayer();

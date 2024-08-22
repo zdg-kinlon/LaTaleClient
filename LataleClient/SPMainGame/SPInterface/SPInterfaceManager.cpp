@@ -113,9 +113,9 @@
 #include "SPWindowCreateMsg.h"
 #include "SPWindowDestoryMsg.h"
 
-#include "SPWindowLove.h"
-#include "SPWindowLoveMsgInput.h"
-#include "SPWindowLoveMsgView.h"
+#include "SPLove/SPWindowLove.h"
+#include "SPLove/SPWindowLoveMsgInput.h"
+#include "SPLove/SPWindowLoveMsgView.h"
 
 #include "SPUIUnit.h"
 #include "SPUIChatMacro.h"

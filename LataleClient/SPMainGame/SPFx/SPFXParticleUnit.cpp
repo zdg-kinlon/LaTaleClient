@@ -241,7 +241,7 @@ void SPFXParticleUnit::RandomCreatePosArea( float& fOutPosX , float& fOutPosY , 
 
 	float	fAngle;
 
-	for( i = 0 ; i < 5 ; ++i )
+	for( int i = 0 ; i < 5 ; ++i )
 	{
 		SPFX_UTIL::CalAngle2D( fAngle , 0.0f , fRadius , fBoxXPos[ i ] - fCenterPosX , fBoxYPos[ i ] - fCenterPosY );
 		SPFX_UTIL::CalEllipse( fBoxXPos[ i ] , fBoxYPos[ i ] , fCenterPosX , fCenterPosY , fRadius , fRadius , fAngle + m_fCurRotateDegree );
@@ -249,7 +249,7 @@ void SPFXParticleUnit::RandomCreatePosArea( float& fOutPosX , float& fOutPosY , 
 
 	bool	bResult	=	false;
 
-	for( i = 0 ; i < 4 ; ++i )
+	for( int i = 0 ; i < 4 ; ++i )
 	{
 		bResult	=	SPFX_UTIL::GetIntersection( fMaxXPos , fMaxYPos , fCenterPosX , fCenterPosY , fEllipseXPos , fEllipseYPos , fBoxXPos[ i ] , fBoxYPos[ i ] , fBoxXPos[ i + 1 ] , fBoxYPos[ i + 1 ] );
 
@@ -725,7 +725,7 @@ void SPFXParticleUnit::RenderOnlyLine()
 
 	g_pVideo->GetSysLine()->SetColor( D3DXCOLOR( 1.0f , 1.0f , 1.0f , m_RGBA.a ) );
 
-	for( i = 0 ; i < 4 ; ++i )
+	for( int i = 0 ; i < 4 ; ++i )
 	{
 		rcLine.left		=	(LONG)( fXPosBox[ i ]		+	fAdjustX );
 		rcLine.top		=	(LONG)( fYPosBox[ i ]		+	fAdjustY );
